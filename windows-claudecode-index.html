@@ -290,6 +290,13 @@ code {
 
 /* ===== RESPONSIVE — MOBILE ===== */
 @media (max-width: 600px) {
+  body { overflow-x: hidden; }
+  .chapter { overflow: hidden; }
+  .panel, .box, .code { max-width: 100%; overflow-wrap: break-word; }
+  .code { word-break: break-all; }
+  img { max-width: 100%; height: auto; }
+  [style*="display:flex"], [style*="display: flex"] { flex-wrap: wrap !important; }
+  [style*="min-width"] { min-width: 0 !important; }
   .cover { padding:36px 16px 30px; }
   .cover h1 { font-size:22px; line-height:1.3; }
   .cover-sub { font-size:12px; margin-bottom:20px; }
@@ -461,10 +468,11 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
       <a href="#ch4" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #2e7d32; background:#e8f5e9;"><span style="background:#2e7d32; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 4</span><span>🛡️ 安全のお約束5つ</span></div></a>
       <a href="#ch5" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #00695c; background:#e0f2f1;"><span style="background:#00695c; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 5</span><span>📝 Claudeアカウントを作ろう</span></div></a>
       <a href="#ch6" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #1565c0; background:#e3f2fd;"><span style="background:#1565c0; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 6</span><span>💳 プランを選ぼう</span></div></a>
-      <a href="#ch7" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #ad1457; background:#fce4ec;"><span style="background:#ad1457; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 7</span><span>💻 Claudeをインストールしよう</span></div></a>
-      <a href="#ch8" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #c62828; background:#ffebee;"><span style="background:#c62828; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 8</span><span>⌨️ CLI版 STEP1・2：PowerShell ＆ Node.js</span></div></a>
-      <a href="#ch9" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #6d4c41; background:#efebe9;"><span style="background:#6d4c41; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 9</span><span>⌨️ CLI版 STEP3・4：インストール ＆ ログイン</span></div></a>
-      <a href="#ch10" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #283593; background:#e8eaf6;"><span style="background:#283593; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 10</span><span>🔑 APIキー管理 ＆ セキュリティ最終チェック</span></div></a>
+      <a href="#ch7" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #ad1457; background:#fce4ec;"><span style="background:#ad1457; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 7</span><span>💻 デスクトップアプリをインストール</span></div></a>
+      <a href="#ch8" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #c62828; background:#ffebee;"><span style="background:#c62828; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 8</span><span>⌨️ Code CLI版をインストール</span></div></a>
+      <a href="#ch9" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #c62828; background:#ffebee;"><span style="background:#c62828; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 9</span><span>🔑 APIキーを取得・保管</span></div></a>
+      <a href="#ch10" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #6d4c41; background:#efebe9;"><span style="background:#6d4c41; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 10</span><span>📂 プログラムのAPIキー管理</span></div></a>
+      <a href="#ch11" style="text-decoration:none; color:inherit;"><div style="display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:6px; border:2px solid #283593; background:#e8eaf6;"><span style="background:#283593; color:white; border-radius:4px; padding:2px 8px; font-size:11px; font-weight:bold; white-space:nowrap;">Ch 11</span><span>✅ セキュリティ最終チェック</span></div></a>
     </div>
     <div style="background:#f5f5f5; padding:8px 16px; font-size:11px; color:#888; border-top:1px solid #ddd;">
       💡 Cowork利用者は はじめに・Ch1・2・4・5・6・7 だけでOK！　CLI版（Windows）はCh3・8・9・10も読もう
@@ -571,7 +579,7 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
         </tr>
         <tr>
           <td>⏱️ <b>時間</b></td>
-          <td>Cowork・Desktop版：30〜45分 ／ CLI版：60〜90分</td>
+          <td>Cowork・デスクトップアプリ：30〜45分 ／ CLI版：60〜90分</td>
           <td class="ok center">必須</td>
         </tr>
         <tr>
@@ -583,6 +591,86 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
     </div>
   </div>
 
+
+  <!-- 3ツール徹底比較（Cowork/Code Desktop/Code CLI） -->
+  <!-- 3ツール比較 -->
+  <div class="panel-row cols-1">
+    <div class="panel auto" style="border:3px solid #1565c0;">
+      <div class="p-title" style="color:#1565c0;">🔍 Cowork・Code Desktop・Code CLIの違いを徹底比較</div>
+      <div style="font-size:13px;">
+
+        <div style="display:flex; align-items:center; gap:0; margin-bottom:14px; font-size:12px;">
+          <div style="flex:1; text-align:center; background:#e3f2fd; padding:8px; border-radius:8px 0 0 8px; border:2px solid #1565c0; font-weight:bold; color:#1565c0;">🖥️ Cowork</div>
+          <div style="padding:4px 6px; background:#c62828; color:white; font-size:10px; font-weight:bold; white-space:nowrap;">← 大きな違い →</div>
+          <div style="flex:1; text-align:center; background:#e8f5e9; padding:8px; border:2px solid #2e7d32; font-weight:bold; color:#2e7d32;">🖼️ Code Desktop</div>
+          <div style="padding:4px 6px; background:#ff9800; color:white; font-size:10px; font-weight:bold; white-space:nowrap;">← 小さな違い →</div>
+          <div style="flex:1; text-align:center; background:#ffebee; padding:8px; border-radius:0 8px 8px 0; border:2px solid #c62828; font-weight:bold; color:#c62828;">⌨️ Code CLI</div>
+        </div>
+
+        <table class="mtable">
+          <tr>
+            <th></th>
+            <th style="background:#e3f2fd; color:#1565c0;">🖥️ Cowork</th>
+            <th style="background:#e8f5e9; color:#2e7d32;">🖼️ Code Desktop</th>
+            <th style="background:#ffebee; color:#c62828;">⌨️ Code CLI</th>
+          </tr>
+          <tr>
+            <td><b>ひとことで</b></td>
+            <td><b>AIに仕事を任せる</b>ツール</td>
+            <td><b>AIと一緒にコードを書く</b>アプリ</td>
+            <td><b>AIを開発ワークフローに<br>組み込む</b>ツール</td>
+          </tr>
+          <tr>
+            <td><b>操作方法</b></td>
+            <td>アプリ画面で対話</td>
+            <td>アプリ画面で対話</td>
+            <td>PowerShellでコマンド</td>
+          </tr>
+          <tr>
+            <td><b>主な用途</b></td>
+            <td>文書作成・リサーチ<br>ファイル整理・Excel操作</td>
+            <td>コード作成・編集<br>プロジェクト操作</td>
+            <td>左記に加えて<br>Git連携・自動化・CI/CD</td>
+          </tr>
+          <tr>
+            <td><b>できる例</b></td>
+            <td>「売上レポート作って」<br>「この資料を要約して」<br>「フォルダを整理して」</td>
+            <td>「このバグを直して」<br>「関数を追加して」<br>「テストを書いて」</td>
+            <td>「PRをレビューして」<br>「CIが通るまで修正して」<br>「100ファイル一括変換」</td>
+          </tr>
+          <tr>
+            <td><b>難易度</b></td>
+            <td class="ok">★☆☆ 初心者OK</td>
+            <td>★★☆ 少しPC慣れ</td>
+            <td>★★★ 開発者向け</td>
+          </tr>
+          <tr>
+            <td><b>PowerShell</b></td>
+            <td class="ok">不要</td>
+            <td class="ok">不要</td>
+            <td class="ng">必要</td>
+          </tr>
+          <tr>
+            <td><b>APIキー</b></td>
+            <td class="ok">不要（有料プランのみ）</td>
+            <td class="ok">不要（有料プランのみ）</td>
+            <td class="ng">必要</td>
+          </tr>
+          <tr>
+            <td><b>こんな人に</b></td>
+            <td class="ok">ビジネス活用をしたい人<br><b>← まずここから！</b></td>
+            <td>プログラミングを<br>始めたい・学びたい人</td>
+            <td>開発者・エンジニア<br>完全自動化したい人</td>
+          </tr>
+        </table>
+
+        <div style="margin-top:10px; padding:10px; background:#e3f2fd; border-radius:8px; font-size:12px; border-left:4px solid #1565c0;">
+          ✅ <b>迷ったらCoworkから！</b> 日常業務（リサーチ・ファイル整理・文書作成・Excel操作）はCoworkで全部できます。<br>
+          <span style="font-size:11px; color:#555; display:block; margin-top:4px;">「コードを書きたい」→ Code Desktop　「本格的に開発・自動化したい」→ Code CLI へ進めばOK！</span>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 読むChapter案内 -->
   <div class="panel-row cols-1">
     <div class="panel auto" style="border:4px solid #111; background:#fffde7;">
@@ -624,7 +712,7 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
             ✅ Ch.5 アカウント作成<br>
             ✅ Ch.6 プラン選択（<b style="color:#c62828;">必須</b>）<br>
             ✅ Ch.7 デスクトップアプリをインストール<br>
-            ⬜ Ch.8〜10 <span style="color:#bbb;">スキップOK</span>
+            ⬜ Ch.8〜11 <span style="color:#bbb;">スキップOK</span>
           </div>
           <div style="margin-top:8px; background:#fff3e0; border-radius:6px; padding:8px; font-size:11px;">
             💡 ターミナル・APIキー不要！ただし<b>有料プラン加入が必須</b>です。<br>
@@ -647,7 +735,7 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
             ✅ Ch.5 アカウント作成<br>
             ✅ Ch.6 プラン選択<br>
             ✅ Ch.7 インストール＋初期設定<br>
-            ⬜ Ch.8〜10 <span style="color:#bbb;">スキップOK</span>
+            ⬜ Ch.8〜11 <span style="color:#bbb;">スキップOK</span>
           </div>
           <div style="margin-top:8px; background:#e8f5e9; border-radius:6px; padding:8px; font-size:11px;">
             💡 アプリをインストールしてログインするだけ！PowerShellもAPIキーも不要！
@@ -659,7 +747,7 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
           <div style="font-size:15px; font-weight:900; color:#c62828; margin-bottom:4px; text-align:center;">⌨️ Code CLI版を<br>使う人</div>
           <div style="text-align:center; font-size:10px; color:#555; margin-bottom:8px;">開発を自動化したい人向け</div>
           <div style="background:#ffebee; border-radius:6px; padding:8px; margin-bottom:8px; text-align:center; font-weight:bold; font-size:12px;">
-            Chapter 1〜10 全部<br><span style="font-size:10px; font-weight:normal;">（順番に読もう）</span>
+            Chapter 1〜11 全部<br><span style="font-size:10px; font-weight:normal;">（順番に読もう）</span>
           </div>
           <div style="color:#555; line-height:1.9;">
             ✅ Ch.1 Claudeとは？<br>
@@ -668,10 +756,11 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
             ✅ Ch.4 安全のお約束<br>
             ✅ Ch.5 アカウント作成<br>
             ✅ Ch.6 プラン選択<br>
-            ✅ Ch.7 Cowork・Desktop<br>
-            ✅ Ch.8 PowerShell＆Node.js<br>
-            ✅ Ch.9 CLI版インストール<br>
-            ✅ Ch.10 APIキー＆チェック
+            ✅ Ch.7 デスクトップアプリ<br>
+            ✅ Ch.8 Code CLI版インストール<br>
+            ✅ Ch.9 APIキー取得・保管<br>
+            ✅ Ch.10 プログラムのAPIキー管理<br>
+            ✅ Ch.11 セキュリティ最終チェック
           </div>
           <div style="margin-top:8px; background:#ffebee; border-radius:6px; padding:8px; font-size:11px;">
             ⚠️ PowerShell操作・APIキー設定など手順が多め。でもGit連携・自動化・CI/CDなど開発の幅が一気に広がる！
@@ -822,7 +911,7 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
     <div class="panel auto bg-yellow">
       <div class="char-row">
         <div class="char-block"><div class="char-icon claude"></div><div class="char-name">クロードくん</div></div>
-        <div class="bubble tail-left">CLI版を使う人は、ここから読んでね！<br>Cowork・Desktop版の人は<b>Ch.4へスキップOK</b>だよ。</div>
+        <div class="bubble tail-left">CLI版を使う人は、ここから読んでね！<br>Cowork・デスクトップアプリの人は<b>Ch.4へスキップOK</b>だよ。</div>
       </div>
     </div>
   </div>
@@ -972,7 +1061,7 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
         <div class="box box-red">
           <div class="box-title">⚠️ お約束②：パスワード・APIキーを共有しない</div>
           <span class="ng">❌ ダメ：</span> チャット欄に書く・他人と共有する・メモ帳に貼る<br>
-          <span class="ok">✅ 正しい：</span> <b>Windows資格情報マネージャー</b>に保管する（Ch.10で解説）
+          <span class="ok">✅ 正しい：</span> <b>Windows資格情報マネージャー</b>に保管する（Ch.9で解説）
         </div>
         <div class="box box-red">
           <div class="box-title">⚠️ お約束③：遠隔操作させない</div>
@@ -1103,102 +1192,410 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
 
 <!-- ===== CH7 ===== -->
 <div class="chapter" id="ch7">
-  <div class="chapter-header" style="background:#ad1457;">
-    <div class="chapter-num-big" style="background:#c2185b;">7<br><span class="ch-label">Chapter</span></span></div>
+  <div class="chapter-header" style="background:#880e4f;">
+    <div class="chapter-num-big" style="background:#ad1457;">7<br><span class="ch-label">Chapter</span></div>
     <div class="chapter-header-title">
-      <h2>💻 Claudeをインストールしよう</h2>
+      <h2>💻 Claudeのデスクトップアプリをインストールしよう</h2>
     </div>
   </div>
 
+  <div class="panel-row cols-2">
+    <div class="panel bg-blue auto">
+      <div class="p-title center">🖼️ デスクトップアプリ<br>CoworkとCode Desktop版（GUI）を使う方</div>
+      <div style="font-size:13px; margin-top:6px;">
+        画面があって、クリックで操作できるアプリ版。<br>
+        <b>開発入門者・初心者向け！</b>
+      </div>
+    </div>
+    <div class="panel bg-red auto">
+      <div class="p-title center">⌨️ Code CLI版（PowerShell）</div>
+      <div style="font-size:13px; margin-top:6px;">
+        文字コマンドで操作するプロ向けバージョン。<br>
+        <b>自動化・高度な連携を使いたい人向け！</b><br>
+        <span style="font-size:12px; color:#c62828;">※ インストール手順はデスクトップアプリの下に記載</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop版 -->
   <div class="panel-row cols-1">
     <div class="panel auto bg-blue">
-      <div class="p-title">🖥️ Coworkとは？</div>
-      <div class="char-row" style="margin-bottom:10px;">
-        <div class="char-block"><div class="char-icon claude"></div><div class="char-name">クロードくん</div></div>
-        <div class="bubble tail-left">Coworkは<b>チャットで指示するだけで使えるデスクトップアプリ</b>だよ！<br>PowerShellもAPIキーも不要で、操作は簡単。<br>ただし<b>有料プラン（Pro以上）が必要</b>で、無料では使えないよ。</div>
+      <div class="p-title">🖼️ デスクトップアプリのインストール</div>
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:13px;">
+        <div class="box box-blue">
+          <span class="step-badge"><span class="step-num">1</span> Chromeを開いて手打ちでアクセス（プラン選択後のページにも表示）</span><br>
+          <div class="code" style="margin-top:6px;"><span class="cmd">https://claude.ai/download</span></div>
+        </div>
+        <div class="box box-green">
+          <span class="step-badge"><span class="step-num">2</span> ダウンロード</span><br>
+          「Download for Windows（Windows版をダウンロード）」ボタンをクリック → .exeファイルをダウンロード
+        </div>
+        <div class="box box-yellow">
+          <span class="step-badge"><span class="step-num">3</span> インストール</span><br>
+          ダウンロードした.exeファイルをダブルクリック → 画面の指示に従って「次へ」→「インストール」→「完了」
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">4</span> 起動・ログイン</span><br>
+          スタートメニューから「Claude」を検索して起動 → Claudeアカウントでログイン
+        </div>
+        <div class="box box-green">
+          <span class="step-badge"><span class="step-num">5</span> 初期設定をする（重要！ここで差がつく）</span><br>
+          ログイン後すぐに設定画面を開いて、以下を設定しよう → 次のパネルで詳しく解説！
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desktop版 初期設定 -->
+  <div class="panel-row cols-1">
+    <div class="panel auto">
+      <div class="p-title">⚙️ デスクトップアプリ 初期設定ガイド（ログイン後すぐやろう！）</div>
+
+      <div class="char-row" style="margin-bottom:12px;">
+        <div class="char-block">
+          <div class="char-icon idea">💡</div>
+          <div class="char-name">ひかりちゃん</div>
+        </div>
+        <div class="bubble tail-left">
+          設定画面に入力した内容は全会話に自動で反映されるから、<br>
+          ちゃんと埋めておくと<b>Claudeがあなた向けに動いてくれる</b>よ。✨<br><br>
+          中でも<b>「個人設定」欄が一番重要</b>。<br>
+          初心者ほど効果が大きい設定だから、先にやっておくのがおすすめだよ♪
+        </div>
+      </div>
+
+      <div class="box box-gray" style="font-size:13px; margin-bottom:10px;">
+        <b>設定画面の開き方：</b> アプリ左上のメニュー または プロフィールアイコン → <b>「設定」</b>をクリック<br>
+        <span style="color:#666; font-size:12px;">💡 左サイドバーのタブが2グループに分かれています。上のグループがAI・アカウント設定、下の「デスクトップアプリ」グループがアプリ固有の設定です。</span>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:12px; font-size:13px;">
+
+        <!-- ===== 全タブ設定一覧 ===== -->
+        <div class="box box-blue">
+          <div class="box-title">⚙️ 設定タブ一覧（初心者向け優先度ガイド）</div>
+          <table class="mtable" style="margin-top:8px;">
+            <tr>
+              <th style="width:22%;">グループ</th>
+              <th style="width:20%;">タブ名</th>
+              <th style="width:28%;">初心者がやること</th>
+              <th>おすすめ設定・メモ</th>
+              <th style="width:13%;">優先度</th>
+            </tr>
+            <!-- ===== 上部タブ群（AI・アカウント設定） ===== -->
+            <tr>
+              <td rowspan="10" style="text-align:center; font-size:11px; color:#1565c0; font-weight:bold; background:#e3f2fd;">
+                ☁️<br><b>AI・アカウント設定</b><br>
+                <span style="font-weight:normal; color:#555;">（サイドバー<br>上のグループ）</span><br>
+                <span style="font-weight:normal; color:#888; font-size:10px;">ウェブ版・<br>スマホでも<br>共通の設定</span>
+              </td>
+              <td><b>👤 一般</b></td>
+              <td><b>名前・職種・個人設定を入力</b></td>
+              <td>Claudeへの呼び名・職種・個人設定欄（詳細は下のボックスで解説）</td>
+              <td class="ok"><b>⭐ 最重要</b></td>
+            </tr>
+            <tr>
+              <td><b>👤 アカウント</b></td>
+              <td>メールアドレスの確認</td>
+              <td>パスワード変更・メール変更は必要な時だけでOK</td>
+              <td>確認のみ</td>
+            </tr>
+            <tr style="background:#fff3e0;">
+              <td><b>🔒 プライバシー</b></td>
+              <td><b>2つをOFFにする！</b></td>
+              <td>
+                ・<b>ロケーションメタデータ → OFF</b>（位置情報を共有しない）<br>
+                ・<b>Claudeの改善にご協力ください → OFF</b>（会話をAI学習に使わせない）
+              </td>
+              <td class="ok"><b>⭐ 最重要</b><br>セキュリティ</td>
+            </tr>
+            <tr>
+              <td><b>💳 請求</b></td>
+              <td>プラン・支払い確認</td>
+              <td>現在のプランと次回請求日を確認。変更は必要な時だけ</td>
+              <td>確認のみ</td>
+            </tr>
+            <tr style="background:#e8f5e9;">
+              <td><b>📊 使用量</b></td>
+              <td>月間利用<ruby>上限<rt>じょうげん</rt></ruby>の確認</td>
+              <td>
+                「追加使用量（月間利用上限）」を確認。<br>
+                ・<b>「無制限」→ 要注意！</b>上限金額を設定しよう<br>
+                ・数字設定済み → 安心、そのままでOK
+              </td>
+              <td class="ok"><b>⭐ 重要</b><br>課金管理</td>
+            </tr>
+            <tr>
+              <td><b>⚙️ 機能</b></td>
+              <td>便利な機能をONにする</td>
+              <td>
+                ・<b>Artifacts → ON推奨</b>（コード・文書が別ウィンドウで表示）<br>
+                ・<b>プロジェクト機能 → ON推奨</b>（話題ごとに会話を整理）
+              </td>
+              <td>おすすめ</td>
+            </tr>
+            <tr>
+              <td><b>🔗 コネクタ</b></td>
+              <td>外部ツール連携</td>
+              <td>Google Drive・GitHubなどと連携。<b>今は触らなくてOK</b></td>
+              <td>後回しでOK</td>
+            </tr>
+            <tr>
+              <td><b>⌨️ Claude Code</b></td>
+              <td>CLI版の設定</td>
+              <td>CLI（PowerShell）版を使う人向け。初心者は後回しでOK</td>
+              <td>後回しでOK</td>
+            </tr>
+            <tr>
+              <td><b>🖥️ Cowork</b></td>
+              <td>Coworkの設定</td>
+              <td>デスクトップ自動化ツール「Cowork」を使う人向け</td>
+              <td>後回しでOK</td>
+            </tr>
+            <tr>
+              <td><b>🌐 Claude in Chromeベータ</b></td>
+              <td>Chrome拡張の設定</td>
+              <td>ChromeブラウザでClaudeを使う拡張向け。余裕があれば</td>
+              <td>後回しでOK</td>
+            </tr>
+            <!-- ===== デスクトップアプリ専用タブ ===== -->
+            <tr style="background:#f3e5f5;">
+              <td rowspan="3" style="text-align:center; font-size:11px; color:#6a1b9a; font-weight:bold; background:#f3e5f5;">
+                🖥️<br><b>デスクトップ<br>アプリ</b><br>
+                <span style="font-weight:normal; color:#555;">（サイドバー<br>下のグループ）</span><br>
+                <span style="font-weight:normal; color:#888; font-size:10px;">このアプリの<br>動作設定</span>
+              </td>
+              <td><b>⚙️ 一般</b></td>
+              <td>アプリの動作を設定</td>
+              <td>スタートアップ・ショートカット・タスクバー表示など（詳細は下のボックスで解説）</td>
+              <td>おすすめ</td>
+            </tr>
+            <tr style="background:#f3e5f5;">
+              <td><b>🧩 <ruby>拡張機能<rt>かくちょうきのう</rt></ruby></b></td>
+              <td>プラグインの管理</td>
+              <td>拡張ツールの管理画面。<b>今は触らなくてOK</b></td>
+              <td>後回しでOK</td>
+            </tr>
+            <tr style="background:#f3e5f5;">
+              <td><b>👨‍💻 開発者</b></td>
+              <td>高度な設定</td>
+              <td>MCPサーバーなど。<b>プログラミングに慣れてからでOK</b></td>
+              <td>後回しでOK</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- ===== プライバシー詳細手順 ===== -->
+        <div class="box box-red">
+          <div class="box-title">🔐 プライバシー設定の変更手順（必ずやろう！）</div>
+          <div style="margin-top:8px; display:flex; flex-direction:column; gap:8px;">
+            <div>
+              <b>① ロケーションメタデータをOFFにする</b><br>
+              <span style="color:#555; margin-left:1em; display:block; margin-top:4px;">
+                設定 → プライバシータブ →「ロケーションメタデータ」を<b>オフ</b>に切り替える<br>
+                <span style="color:#777;">→ ONのままだと、あなたのいるエリアがClaudeに伝わってしまう。不要な情報は渡さないほうが安全！</span>
+              </span>
+            </div>
+            <div>
+              <b>② 「Claudeの改善にご協力ください」をOFFにする</b><br>
+              <span style="color:#555; margin-left:1em; display:block; margin-top:4px;">
+                設定 → プライバシータブ →「Claudeの改善にご協力ください」を<b>オフ</b>に切り替える<br>
+                <span style="color:#777;">→ ONのままだと、あなたの会話データがAI学習に使われる可能性がある。仕事の情報や個人情報を入力することも多いので、オフを推奨！</span>
+              </span>
+            </div>
+            <div class="char-row" style="margin-top:6px;">
+              <div class="char-block"><div class="char-icon kiken"></div><div class="char-name">きけん博士</div></div>
+              <div class="bubble tail-left">この2つはデフォルトでONになっておるのじゃ！<br>インストール直後は必ずOFFにするのじゃよ。<br>プロ意識のある者ほど、最初に確認するポイントじゃ！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== 使用量・課金管理 ===== -->
+        <div class="box box-yellow">
+          <div class="box-title">💳 使用量・課金の確認ポイント</div>
+          <div style="margin-top:8px; display:flex; flex-direction:column; gap:6px;">
+            <div>
+              <b>設定 → 使用量タブ →「追加使用量」または「月間利用上限」欄を確認</b>
+            </div>
+            <table class="mtable" style="margin-top:6px;">
+              <tr><th>表示内容</th><th>意味</th><th>対応</th></tr>
+              <tr style="background:#ffebee;">
+                <td>「<b>無制限</b>」または上限なし</td>
+                <td>使いすぎると青天井で課金される危険あり</td>
+                <td class="ng"><b>⚠️ 要注意！</b><br>金額を設定しよう</td>
+              </tr>
+              <tr style="background:#e8f5e9;">
+                <td>「<b>$10</b>」など数字が設定されている</td>
+                <td>その金額を超えたら自動でストップ</td>
+                <td class="ok">✅ 安心！<br>そのままでOK</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- ===== おすすめ便利機能 ===== -->
+        <div class="box box-green">
+          <div class="box-title">✨ セキュリティOK！おすすめ便利機能</div>
+          <table class="mtable" style="margin-top:8px;">
+            <tr>
+              <th style="width:28%;">機能名</th>
+              <th>どこで設定</th>
+              <th>何が便利？</th>
+            </tr>
+            <tr>
+              <td><b>Artifacts（アーティファクト）</b></td>
+              <td>設定 → 機能タブ</td>
+              <td>コード・HTMLなどが別ウィンドウで表示され、プレビューしながら作業できる</td>
+            </tr>
+            <tr>
+              <td><b>プロジェクト機能</b></td>
+              <td>設定 → 機能タブ</td>
+              <td>話題ごとに会話を整理でき、Claudeが前回の文脈を覚えてくれる</td>
+            </tr>
+            <tr>
+              <td><b>スタイル設定（話し方）</b></td>
+              <td>チャット画面の「スタイル」ボタン</td>
+              <td>「簡潔に」「詳しく」など返答スタイルをワンクリックで切り替えられる</td>
+            </tr>
+            <tr>
+              <td><b>クイックアクセスショートカット</b></td>
+              <td>デスクトップアプリ → 一般タブ</td>
+              <td>Altキー2回などで画面のどこからでも<ruby>即座<rt>そくざ</rt></ruby>にClaudeを呼び出せる</td>
+            </tr>
+            <tr>
+              <td><b>タスクバー／システムトレイに表示</b></td>
+              <td>デスクトップアプリ → 一般タブ</td>
+              <td>タスクバーやシステムトレイにアイコン常駐。アプリを閉じても素早くアクセスできる</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- ===== ウェブ版「一般」タブ詳細 ===== -->
+        <div class="box" style="border:2px solid #1565c0; background:#e8f0fe;">
+          <div class="box-title" style="color:#1565c0;">👤 AI・アカウント設定「一般」タブの内容</div>
+          <div style="font-size:12px; color:#555; margin-bottom:8px;">※ サイドバー上グループの「一般」タブです（デスクトップアプリの一般とは別）</div>
+          <table class="mtable">
+            <tr>
+              <th style="width:40%;">設定項目</th>
+              <th>設定内容の例</th>
+              <th>なぜ重要？</th>
+            </tr>
+            <tr>
+              <td><b>Claudeには何とお呼びしてほしいですか？</b></td>
+              <td>自分の名前や呼び名<br><small>例：健、さん、ニックネームなど</small></td>
+              <td>Claudeが毎回名前で呼んでくれる</td>
+            </tr>
+            <tr>
+              <td><b>担当職種</b></td>
+              <td>一番近い職種を選ぶ<br><small>例：プロダクトマネジメント・マーケティング</small></td>
+              <td>職種に合った回答をしてくれる</td>
+            </tr>
+            <tr>
+              <td><b>Claudeが応答時に考慮すべき個人設定</b></td>
+              <td>自分の状況や希望を自由に書く</td>
+              <td class="ok"><b>⭐ここが最重要！</b><br>全会話に自動で反映される</td>
+            </tr>
+            <tr>
+              <td><b>通知設定（レスポンス完了など）</b></td>
+              <td>レスポンス完了 → ON推奨</td>
+              <td>長い作業が終わったらデスクトップ通知が届く</td>
+            </tr>
+            <tr>
+              <td><b>外観（カラーモード）</b></td>
+              <td>ライト・ダーク・システム設定の3択</td>
+              <td>目が疲れやすい人はダーク推奨</td>
+            </tr>
+          </table>
+          <div style="margin-top:10px;">
+            <b>「個人設定」欄の書き方例：</b>
+            <div class="code" style="margin-top:6px; line-height:1.8;">
+              IT知識が少ない非エンジニアなので、丁寧な説明を心がけてください<br>
+              返答はなるべく短くコンパクトにしてください<br>
+              日本語で回答してください<br>
+              <span class="cmt"># この欄を埋めると、毎回指示しなくてもClaudeが自動で合わせてくれるよ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== デスクトップアプリ「一般」タブ詳細 ===== -->
+        <div class="box" style="border:2px solid #6a1b9a; background:#fce4ec;">
+          <div class="box-title" style="color:#6a1b9a;">🖥️ デスクトップアプリ「一般」タブの内容</div>
+          <div style="font-size:12px; color:#555; margin-bottom:8px;">※ サイドバー下グループの「一般」タブです（アプリ固有の動作設定）</div>
+          <table class="mtable">
+            <tr>
+              <th style="width:40%;">設定項目</th>
+              <th>おすすめ設定</th>
+              <th>説明</th>
+            </tr>
+            <tr>
+              <td><b>スタートアップ時に実行</b></td>
+              <td>好みで</td>
+              <td>ログイン時にClaudeを自動起動する。よく使う人はONが便利</td>
+            </tr>
+            <tr>
+              <td><b>クイックアクセスショートカット</b></td>
+              <td class="ok">✅ 設定推奨</td>
+              <td>Altキー2回など好みのショートカットを設定。どこからでも即座に呼び出せる</td>
+            </tr>
+            <tr>
+              <td><b>音声ショートカット</b></td>
+              <td>好みで</td>
+              <td>音声でClaudeに話しかけたい人向け。不要なら「ショートカットなし」でOK</td>
+            </tr>
+            <tr>
+              <td><b>タスクバー／システムトレイ</b></td>
+              <td class="ok">✅ ON推奨</td>
+              <td>Windowsのタスクバーやシステムトレイにアイコン常駐。素早くアクセスできる</td>
+            </tr>
+            <tr>
+              <td><b>すべてのブラウザアクションを許可</b></td>
+              <td class="ng">⚠️ OFF推奨</td>
+              <td>確認なしにブラウザを操作できる設定。セキュリティのためOFFを推奨</td>
+            </tr>
+            <tr>
+              <td><b>コンピュータ使用（ベータ）</b></td>
+              <td>Cowork使う人はON</td>
+              <td>ClaudeがスクリーンショットやPC操作を行う機能。Coworkを使う場合はON</td>
+            </tr>
+          </table>
+        </div>
+
       </div>
     </div>
   </div>
 
   <div class="panel-row cols-1">
-    <div class="panel auto" style="border:3px solid #1565c0;">
-      <div class="p-title" style="color:#1565c0;">🔍 Cowork・Code Desktop・Code CLIの違いを徹底比較</div>
-      <div style="font-size:13px;">
-
-        <div style="display:flex; align-items:center; gap:0; margin-bottom:14px; font-size:12px;">
-          <div style="flex:1; text-align:center; background:#e3f2fd; padding:8px; border-radius:8px 0 0 8px; border:2px solid #1565c0; font-weight:bold; color:#1565c0;">🖥️ Cowork</div>
-          <div style="padding:4px 6px; background:#c62828; color:white; font-size:10px; font-weight:bold; white-space:nowrap;">← 大きな違い →</div>
-          <div style="flex:1; text-align:center; background:#e8f5e9; padding:8px; border:2px solid #2e7d32; font-weight:bold; color:#2e7d32;">🖼️ Code Desktop</div>
-          <div style="padding:4px 6px; background:#ff9800; color:white; font-size:10px; font-weight:bold; white-space:nowrap;">← 小さな違い →</div>
-          <div style="flex:1; text-align:center; background:#ffebee; padding:8px; border-radius:0 8px 8px 0; border:2px solid #c62828; font-weight:bold; color:#c62828;">⌨️ Code CLI</div>
+    <div class="panel auto bg-green">
+      <div class="char-row">
+        <div class="char-block">
+          <div class="char-icon claude">🤖</div>
+          <div class="char-name">クロードくん</div>
         </div>
-
-        <table class="mtable">
-          <tr>
-            <th></th>
-            <th style="background:#e3f2fd; color:#1565c0;">🖥️ Cowork</th>
-            <th style="background:#e8f5e9; color:#2e7d32;">🖼️ Code Desktop</th>
-            <th style="background:#ffebee; color:#c62828;">⌨️ Code CLI</th>
-          </tr>
-          <tr>
-            <td><b>ひとことで</b></td>
-            <td><b>AIに仕事を任せる</b>ツール</td>
-            <td><b>AIと一緒にコードを書く</b>アプリ</td>
-            <td><b>AIを開発ワークフローに<br>組み込む</b>ツール</td>
-          </tr>
-          <tr>
-            <td><b>操作方法</b></td>
-            <td>アプリ画面で対話</td>
-            <td>アプリ画面で対話</td>
-            <td>ターミナルでコマンド</td>
-          </tr>
-          <tr>
-            <td><b>主な用途</b></td>
-            <td>文書作成・リサーチ<br>ファイル整理・Excel操作</td>
-            <td>コード作成・編集<br>プロジェクト操作</td>
-            <td>左記に加えて<br>Git連携・自動化・CI/CD</td>
-          </tr>
-          <tr>
-            <td><b>できる例</b></td>
-            <td>「売上レポート作って」<br>「この資料を要約して」<br>「フォルダを整理して」</td>
-            <td>「このバグを直して」<br>「関数を追加して」<br>「テストを書いて」</td>
-            <td>「PRをレビューして」<br>「CIが通るまで修正して」<br>「100ファイル一括変換」</td>
-          </tr>
-          <tr>
-            <td><b>難易度</b></td>
-            <td class="ok">★☆☆ 初心者OK</td>
-            <td>★★☆ 少しPC慣れ</td>
-            <td>★★★ 開発者向け</td>
-          </tr>
-          <tr>
-            <td><b>PowerShell</b></td>
-            <td class="ok">不要</td>
-            <td class="ok">不要</td>
-            <td class="ng">必要</td>
-          </tr>
-          <tr>
-            <td><b>APIキー</b></td>
-            <td class="ok">不要（有料プランのみ）</td>
-            <td class="ok">不要（有料プランのみ）</td>
-            <td class="ng">必要</td>
-          </tr>
-          <tr>
-            <td><b>こんな人に</b></td>
-            <td class="ok">ビジネス活用をしたい人<br><b>← まずここから！</b></td>
-            <td>プログラミングを<br>始めたい・学びたい人</td>
-            <td>開発者・エンジニア<br>完全自動化したい人</td>
-          </tr>
-        </table>
-
-        <div style="margin-top:10px; padding:10px; background:#e3f2fd; border-radius:8px; font-size:12px; border-left:4px solid #1565c0;">
-          ✅ <b>迷ったらCoworkから！</b> 日常業務（リサーチ・ファイル整理・文書作成・Excel操作）はCoworkで全部できます。<br>
-          <span style="font-size:11px; color:#555; display:block; margin-top:4px;">「コードを書きたい」→ Code Desktop　「本格的に開発・自動化したい」→ Code CLI へ進めばOK！</span>
+        <div class="bubble tail-left">
+          <b>デスクトップアプリはここまでで完成！</b>🎉<br>
+          Chapter 1・2・4・5・6・7を読み終えたら<br>
+          もうデスクトップアプリが使えるよ！🎉<br><br>
+          「もっと自動化したい」「プログラムを作りたい」<br>
+          と思ったら、Ch.3・8・9・10・11のCLI版に<br>
+          チャレンジしてみてね！
         </div>
       </div>
     </div>
   </div>
 
+</div>
 
+
+<!-- ===== CH8: Code CLI版をインストールしよう（新） ===== -->
+<div class="chapter" id="ch8">
+  <div class="chapter-header" style="background:#c62828;">
+    <div class="chapter-num-big" style="background:#d32f2f;">8<br><span class="ch-label">Chapter</span></div>
+    <div class="chapter-header-title">
+      <h2>⌨️ Code CLI版をインストールしよう</h2>
+    </div>
+  </div>
+
+  <!-- Desktop vs CLI -->
   <div class="panel-row cols-1" style="margin-top:8px;">
     <div class="panel auto" style="background:#fff8e1; border:3px solid #f57f17;">
       <div class="p-title" style="color:#e65100;">🤔 Code Desktop版 vs CLI版 ー 何が違う？いつ乗り換える？</div>
@@ -1246,19 +1643,19 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
             <td class="ok">✅ パイプ・スクリプトで自在</td>
           </tr>
           <tr>
-            <td><b>CI/CD・自動化</b></td>
+            <td><b>CI/CD・自動化</b><br><span style="font-size:11px; color:#777;">（自動テスト＆自動デプロイ）</span></td>
             <td class="ng">❌ できない</td>
             <td class="ok">✅ GitHub Actionsなどと連携</td>
           </tr>
           <tr>
-            <td><b>バッチ処理</b></td>
+            <td><b>バッチ処理</b><br><span style="font-size:11px; color:#777;">（大量ファイルの一括変換）</span></td>
             <td class="ng">❌ 1ファイルずつ</td>
             <td class="ok">✅ 100ファイル一括OK</td>
           </tr>
           <tr>
             <td><b>API利用</b></td>
             <td>有料プラン利用</td>
-            <td>APIキーで<ruby>従量課金<rt>じゅうりょうかきん</rt></ruby></td>
+            <td>有料プラン or APIキー<br><span style="font-size:11px; color:#555;">（どちらでもOK）</span></td>
           </tr>
         </table>
       </div>
@@ -1291,17 +1688,6 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
     </div>
   </div>
 
-</div>
-
-<!-- ===== CH8 ===== -->
-<div class="chapter" id="ch8">
-  <div class="chapter-header" style="background:#c62828;">
-    <div class="chapter-num-big" style="background:#d32f2f;">8<br><span class="ch-label">Chapter</span></span></div>
-    <div class="chapter-header-title">
-      <h2>⌨️ CLI版 STEP 1・2：PowerShell ＆ Node.jsをセットアップ</h2>
-    </div>
-  </div>
-
   <div class="panel-row cols-1">
     <div class="panel auto bg-yellow">
       <div class="char-row">
@@ -1311,309 +1697,612 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
     </div>
   </div>
 
-  <!-- PowerShell起動 -->
+  <!-- CLI版インストール（Mac版と同じコンパクト形式） -->
   <div class="panel-row cols-1">
-    <div class="panel auto">
-      <div class="p-title">🖥️ STEP 1：PowerShellを開こう</div>
-      <div class="step-road">
-        <div class="step-node" style="background:linear-gradient(135deg,#1565c0,#42a5f5); color:white;">
-          <div class="sn-num" style="color:#1565c0;">1</div>
-          <div class="sn-emoji">⊞</div>
-          <div class="sn-title">Windowsキー押す</div>
-          <div class="sn-sub">キーボード左下のWindowsマーク</div>
-        </div>
-        <div class="step-arrow-h">➡️</div>
-        <div class="step-node" style="background:linear-gradient(135deg,#0288d1,#4fc3f7); color:white;">
-          <div class="sn-num" style="color:#0288d1;">2</div>
-          <div class="sn-emoji">⌨️</div>
-          <div class="sn-title">「PowerShell」と入力</div>
-          <div class="sn-sub">そのまま文字を打つだけ</div>
-        </div>
-        <div class="step-arrow-h">➡️</div>
-        <div class="step-node" style="background:linear-gradient(135deg,#00695c,#4db6ac); color:white;">
-          <div class="sn-num" style="color:#00695c;">3</div>
-          <div class="sn-emoji">🖱️</div>
-          <div class="sn-title">クリックして開く</div>
-          <div class="sn-sub">青い画面が開いたらOK！</div>
-        </div>
+    <div class="panel auto" style="background:#fce4ec; border:3px solid #c62828;">
+      <div class="p-title" style="color:#880e4f;">⌨️ CLI版のインストール（全5ステップ）</div>
+      <div class="box box-yellow" style="font-size:12px; margin-bottom:10px;">
+        💡 全部PowerShell（青い画面）で操作します。コマンドはコピペして貼り付けるだけでOK！
       </div>
-      <div class="box box-red" style="margin-top:8px;">
-        <div class="box-title">⚠️ きけん博士からの警告！</div>
-        「<b>管理者として実行</b>」は<b>絶対に使わないのじゃ！</b>普通に開くだけでよいのじゃよ！
-      </div>
-      <div class="box box-cyan" style="margin-top:6px; font-size:12px;">
-        <b>💡 PowerShellの基本ルール3つ：</b><br>
-        ① 入力したら <b>Enter</b> を押して実行<br>
-        ② おかしくなったら <b>Ctrl + C</b> で止める<br>
-        ③ 一字でも間違えるとエラーになる（コピペ推奨！）
+
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:13px;">
+
+        <!-- STEP 1 -->
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">1</span> PowerShellを開く</span><br>
+          Windowsキー → 「<b>PowerShell</b>」と入力 → クリックして開く<br>
+          <span style="color:#c62828; font-size:12px;">⚠️「管理者として実行」は使わない！普通に開くだけでOK</span>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">2</span> Node.jsをインストール</span><br>
+          公式サイト <code>https://nodejs.org/ja</code> から<b>LTS版の .msi</b> をダウンロード → ダブルクリック →「次へ」を押し続けて完了<br>
+          インストール後は<b>PowerShellを一度閉じて開き直す</b>。確認：
+          <div class="code" style="margin-top:6px;">
+            <span class="cmd">node --version</span><br>
+            <span class="cmt"># v20以上が出ればOK！</span>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">3</span> Claude Codeをインストール</span>
+          <div class="code" style="margin-top:6px;">
+            <span class="cmd">npm install -g @anthropic-ai/claude-code</span>
+          </div>
+          確認：
+          <div class="code" style="margin-top:4px;">
+            <span class="cmd">claude --version</span><br>
+            <span class="cmt"># バージョン番号が出ればOK！</span>
+          </div>
+          <div style="margin-top:6px; font-size:11px; color:#c62828;">
+            ⚠️「スクリプトの実行が無効」と出たら：<code>Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</code> → 「Y」でEnter → 再試行
+          </div>
+        </div>
+
+        <!-- STEP 4：ログイン方法（ここが重要） -->
+        <div class="box box-blue">
+          <span class="step-badge"><span class="step-num">4</span> ログイン方法を選ぶ（方法A or 方法B）</span>
+          <div class="char-row" style="margin-top:8px; margin-bottom:8px;">
+            <div class="char-block"><div class="char-icon claude"></div><div class="char-name">クロードくん</div></div>
+            <div class="bubble tail-left" style="font-size:12px;"><b>APIキーは必須じゃないよ！</b>Ch.6で有料プラン（Pro/Max）に入っているなら<b>方法A</b>でログインするだけでOK。迷ったら方法A！</div>
+          </div>
+
+          <table class="mtable" style="font-size:12px; table-layout:fixed; width:100%;">
+            <tr><th style="width:22%;"></th><th style="width:39%; color:#0288d1;">方法A 💳 Claude有料プラン（おすすめ）</th><th style="width:39%; color:#e65100;">方法B 🔑 APIキー</th></tr>
+            <tr><td><b>料金</b></td><td>月額固定（Pro/Max）</td><td>使った分だけ後払い</td></tr>
+            <tr><td><b>設定難易度</b></td><td class="ok">⭐ かんたん！</td><td>⭐⭐⭐ 少し難しい</td></tr>
+            <tr><td><b>キー管理</b></td><td class="ok">不要！ログインだけ</td><td>厳重な保管が必要</td></tr>
+            <tr><td><b>アプリ公開</b></td><td class="ng">❌ 個人利用のみ</td><td class="ok">✅ サービスを作れる</td></tr>
+          </table>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px;">
+            <div style="background:#e3f2fd; border-left:4px solid #0288d1; border-radius:6px; padding:10px; font-size:12px;">
+              <b style="color:#0d47a1;">方法A：Claude有料プランでログイン</b><br><br>
+              ① PowerShellで <code>claude</code> と入力してEnter<br>
+              ② 「<b>Log in with Claude account</b>」を矢印キーで選んでEnter<br>
+              ③ ブラウザが自動で開く → ログイン<br>
+              ④ PowerShellに戻ると完了！🎉
+            </div>
+            <div style="background:#fff3e0; border-left:4px solid #e65100; border-radius:6px; padding:10px; font-size:12px;">
+              <b style="color:#e65100;">方法B：APIキーでログイン（上級者向け）</b><br><br>
+              → <b>Ch.9</b>でAPIキーを取得＆Windows資格情報マネージャーに保管<br>
+              → PowerShellを再起動すると自動で <code>$env:ANTHROPIC_API_KEY</code> が読み込まれて、<code>claude</code> 起動時にログイン不要<br>
+              <span style="color:#c62828;">※ 個人で使うだけなら方法Aで十分！</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 5：はじめて起動 -->
+        <div class="box box-green">
+          <span class="step-badge"><span class="step-num">5</span> はじめて起動！</span>
+          <div class="code" style="margin-top:6px;">
+            <span class="cmd">claude</span>
+          </div>
+          → 「Welcome to Claude Code!」が出たら成功🎉
+        </div>
+
       </div>
     </div>
   </div>
 
-  <!-- Node.jsインストール -->
-  <div class="panel-row cols-1">
-    <div class="panel auto">
-      <div class="p-title">🟢 STEP 2：Node.jsをインストール</div>
-      <div style="display:flex; flex-direction:column; gap:10px; font-size:13px;">
-        <div class="box box-blue">
-          <div class="step-badge"><span class="step-num">1</span> 公式サイトへアクセス</div><br>
-          ブラウザに手打ちで入力：<br>
-          <div class="code" style="margin-top:6px;"><span class="cmd">https://nodejs.org/ja</span></div>
-          ⚠️ 必ず nodejs.org から！偽サイトに注意！
-        </div>
-        <div class="box box-green">
-          <div class="step-badge"><span class="step-num">2</span> LTS版をダウンロード</div><br>
-          「<b>LTS（推奨版）</b>」のダウンロードボタンをクリック<br>
-          <small>※ LTS = Long Term Support = 安定して長く使えるバージョン</small><br>
-          <code>.msi</code> ファイルがダウンロードされる
-        </div>
-        <div class="box box-yellow">
-          <div class="step-badge"><span class="step-num">3</span> インストール</div><br>
-          ダウンロードした <code>.msi</code> をダブルクリック<br>
-          →「次へ」を押し続けてデフォルト設定でOK → 「Finish」で完了
-        </div>
-        <div class="box box-gray">
-          <div class="step-badge"><span class="step-num">4</span> PowerShellを再起動して確認</div><br>
-          <b>重要：</b> 一度PowerShellを<b>完全に閉じて</b>、新しく開き直す！<br>
-          <div class="code" style="margin-top:6px;">
-            <span class="ps">node --version</span><br>
-            <span class="ps">npm --version</span>
-          </div>
-          <code>v22.x.x</code> のような数字が出たら成功！🎉
-        </div>
-      </div>
-      <div class="char-row" style="margin-top:12px;">
-        <div class="char-block"><div class="char-icon idea"></div><div class="char-name">ひかりちゃん</div></div>
-        <div class="bubble tail-left">数字が表示されない場合は、PowerShellを<b>再起動していない</b>かもしれないよ。<br>一度完全に閉じてから、もう一度開き直してみてね。</div>
-      </div>
-    </div>
-  </div>
 </div>
 
-<!-- ===== CH9 ===== -->
+
+<!-- ================ CH9: APIキーの取得・保管（Windows版） ================ -->
 <div class="chapter" id="ch9">
-  <div class="chapter-header" style="background:#6d4c41;">
-    <div class="chapter-num-big" style="background:#795548;">9<br><span class="ch-label">Chapter</span></span></div>
+  <div class="chapter-header" style="background:#b71c1c;">
+    <div class="chapter-num-big" style="background:#c62828;">9<br><span class="ch-label">Chapter</span></div>
     <div class="chapter-header-title">
-      <h2>⌨️ CLI版 STEP 3・4：Claude Codeインストール ＆ ログイン</h2>
+      <h2>🔑 APIキーとは何か・どこで取得・安全に保管しよう</h2>
     </div>
   </div>
 
-  <!-- インストール -->
+  <!-- APIキーとは何か -->
   <div class="panel-row cols-1">
-    <div class="panel auto">
-      <div class="p-title">🤖 STEP 3：Claude Codeをインストール</div>
-      <div class="box box-dark" style="margin-bottom:10px;">
-        <div class="box-title" style="color:#9cdcfe;">PowerShellに入力してEnter：</div>
-        <div class="code" style="margin-top:6px;">
-          <span class="ps">npm install -g @anthropic-ai/claude-code</span>
+    <div class="panel auto bg-yellow">
+      <div class="char-row">
+        <div class="char-block">
+          <div class="char-icon user">👨</div>
+          <div class="char-name">あなた</div>
         </div>
-      </div>
-      <div class="box box-red">
-        <div class="box-title">⚠️ 「スクリプトの実行が無効」エラーが出たら？</div>
-        以下を実行してから再試行：
-        <div class="code" style="margin-top:6px;">
-          <span class="ps">Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</span>
+        <div class="bubble tail-left">
+          そもそもAPIキーって何？<br>
+          どこで手に入れるの？何のために使うの？
         </div>
-        「<b>Y</b>」を入力してEnter → もう一度インストールコマンドを実行
-      </div>
-      <div class="box box-green" style="margin-top:8px;">
-        <div class="box-title">✅ インストール確認</div>
-        <div class="code">
-          <span class="ps">claude --version</span>
-        </div>
-        バージョン番号が出たら完璧！🎉
       </div>
     </div>
   </div>
 
-  <!-- ログイン -->
   <div class="panel-row cols-1">
     <div class="panel auto">
-      <div class="p-title">🔐 STEP 4：ログイン方法を選ぼう</div>
-      <table class="mtable">
-        <tr><th></th><th style="color:#0288d1;">方法A 💳 Claude有料プラン</th><th style="color:#e65100;">方法B 🔑 APIキー</th></tr>
-        <tr><td><b>料金</b></td><td>月額固定（Pro/Max）</td><td>使った分だけ後払い</td></tr>
-        <tr><td><b>設定難易度</b></td><td class="ok">⭐ かんたん！</td><td>⭐⭐⭐ 少し難しい</td></tr>
-        <tr><td><b>キー管理</b></td><td class="ok">不要！ログインだけ</td><td>厳重な保管が必要</td></tr>
-        <tr><td><b>月の上限</b></td><td>あり（Pro/Max別）</td><td>なし（使うほど課金）</td></tr>
-        <tr><td><b>アプリ公開</b></td><td class="ng">❌ 個人利用のみ</td><td class="ok">✅ サービスを作れる</td></tr>
-      </table>
-      <div class="char-row" style="margin-top:12px;">
-        <div class="char-block"><div class="char-icon claude"></div><div class="char-name">クロードくん</div></div>
-        <div class="bubble tail-left">迷ったら絶対<b>方法A</b>！<br>上限が気になってきたらMaxへ。<br>アプリを作りたくなったら<b>そのとき初めて方法B</b>を！</div>
+      <div class="p-title">🔑 APIキーとは？（3つのポイント）</div>
+      <div class="box box-gray" style="font-size:13px; margin-bottom:10px;">
+        <div class="box-title">🗝️ そもそもAPIキーって何？（一般的な話）</div>
+        <b>API</b>（Application Programming Interface）は<b>アプリ同士がやり取りするための窓口</b>。<br>
+        <b>APIキー</b>は、その窓口を使うときに「私はあなたの契約者ですよ」と<b>本人確認する専用のパスワード</b>です。<br><br>
+        APIキーは<b>Anthropic専用のものではなく</b>、OpenAI・Google・Slack・Stripeなど<b>ほぼすべてのWebサービスが独自のAPIキーを発行</b>しています。<br>
+        各サービスごとに別々のAPIキーがある、と覚えておこう！<br>
+        <span style="font-size:12px; color:#c62828;">👉 以下では <b>AnthropicのAPIキー</b>（= Claude Code用）について説明します。</span>
       </div>
+      <div class="panel-row cols-3" style="gap:8px; margin:0;">
+        <div class="box box-blue" style="font-size:13px;">
+          <div class="box-title">① 何のAPIキー？</div>
+          <b>AnthropicのAPIキー</b>です。<br><br>
+          Claude Codeが「Anthropicのサーバーにいる本物のClaude AI」に接続するための<b>認証コード</b>。<br>
+          <span style="font-size:12px; color:#555;">※ 他社サービス（OpenAIなど）のAPIキーとは別物です。</span>
+        </div>
+        <div class="box box-green" style="font-size:13px;">
+          <div class="box-title">② 何のために使う？</div>
+          Claude CodeはあなたのPCだけでは動きません。<br><br>
+          質問するたびに<b>Anthropicのサーバーに通信</b>して返答をもらう仕組みです。APIキーはその<b>通行証</b>。
+        </div>
+        <div class="box box-yellow" style="font-size:13px;">
+          <div class="box-title">③ どこで取得する？</div>
+          <b>Anthropic Console</b>（公式管理画面）から<ruby>発行<rt>はっこう</rt></ruby>します。<br><br>
+          使った分だけ料金が発生する<b>従量課金制</b>のため、クレジットカード登録が必要です。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 王国の例え -->
+  <div class="panel-row cols-1">
+    <div class="panel auto bg-blue">
+      <div class="char-row">
+        <div class="char-block">
+          <div class="char-icon claude">🤖</div>
+          <div class="char-name">クロードくん</div>
+        </div>
+        <div class="bubble tail-left">
+          王国の例えで思い出して！<br><br>
+          🏰 あなたのPC（お城）は、答えを出すために<br>
+          毎回 🌉 橋（API）を渡って<br>
+          🌏 Anthropicの遠い国（サーバー）まで行くよ。<br><br>
+          <b>APIキー ＝ その橋を渡る通行証</b>。<br>
+          通行証なしでは橋を渡れない！
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APIキー取得手順 -->
+  <div class="panel-row cols-1">
+    <div class="panel auto">
+      <div class="p-title">📋 APIキーの取得手順（Anthropic Console）</div>
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:13px;">
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">1</span> ブラウザを開いてアドレスバーに手打ちで入力</span>
+          <div class="code" style="margin-top:8px;"><span class="cmd">https://console.anthropic.com</span></div>
+          ⚠️ 検索せずに手打ちで入力してください（偽サイト対策）
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">2</span> Claudeアカウントでログイン</span><br>
+          Chapter 5で作ったアカウントでログインします
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">3</span> 初回のみ：クレジットカードを登録する</span><br>
+          左メニューの「Billing」→「Add payment method」→ カード情報を入力<br>
+          <div class="box box-yellow" style="margin-top:8px; font-size:12px;">
+            💡 使った分だけ請求される従量課金制です。<br>
+            必ず「Limits」で<b>月額上限金額</b>を設定しておきましょう（例：$5〜$10）
+          </div>
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">4</span> APIキーを発行する</span><br>
+          左メニューの「API Keys」→「Create Key」→ 名前をつけて作成<br>
+          → <code>sk-ant-api03-xxxxx...</code> という文字列が表示される
+        </div>
+        <div class="box box-red" style="font-size:13px;">
+          ⚠️ <b>このキーは発行直後しか全文表示されません！</b><br>
+          画面を閉じる前に必ずコピーして、次のステップで金庫にしまってください。<br>
+          もし閉じてしまったら、削除して新しく発行し直せばOKです。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-divider" style="margin:16px 0 12px;">— ここから保管方法 —</div>
+
+  <!-- まもるくん -->
+  <div class="panel-row cols-1">
+    <div class="panel auto bg-red">
+      <div class="char-row">
+        <div class="char-block">
+          <div class="char-icon mamoru">🛡️</div>
+          <div class="char-name">まもるくん</div>
+        </div>
+        <div class="bubble tail-left">
+          取得できたら、次は<b>安全な場所に保管</b>！<br>
+          APIキーはホテルのルームキーと同じ。<br>
+          盗まれたら他人が使い放題、<b>請求はあなたに来る！</b><br>
+          保管方法は<b>3種類</b>あるよ。まず違いを確認してね！
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ★ 全体像パネル -->
+  <div class="panel-row cols-1">
+    <div class="panel auto" style="border-color:#e53935; border-width:4px;">
+      <div class="p-title" style="color:#e53935; border-color:#e53935;">⭐ まずここを読んで！3種類の保管方法</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:10px;">
+
+        <div class="box box-blue" style="font-size:13px; position:relative; padding-top:20px;">
+          <div style="position:absolute;top:-12px;left:12px;background:#1976d2;color:white;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:bold;">方法① 全員が最初にやること</div>
+          <div style="font-size:16px; text-align:center; margin-bottom:8px;">🏦 資格情報<br>マネージャー＋$PROFILE</div>
+          <b>こんな人：</b><br>
+          ✅ 初めてAPIキーを設定する<br>
+          ✅ とにかく最初の設定を終わらせたい<br><br>
+          <b>効果：</b> PowerShellを開くたびに自動でセット
+        </div>
+
+        <div class="box box-yellow" style="font-size:13px; position:relative; padding-top:20px;">
+          <div style="position:absolute;top:-12px;left:12px;background:#f57f17;color:white;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:bold;">方法② プログラムを作るときに追加</div>
+          <div style="font-size:16px; text-align:center; margin-bottom:8px;">📂 .env<br>＋.gitignore</div>
+          <b>こんな人：</b><br>
+          ✅ Pythonなどのプログラムを自分で作る<br>
+          ✅ GitHubにコードを上げる予定がある<br><br>
+          <b>効果：</b> GitHubに上げてもAPIキーが漏れない
+        </div>
+
+        <div class="box" style="background:#f3e5f5; border:2px solid #7b1fa2; font-size:13px; position:relative; padding-top:20px;">
+          <div style="position:absolute;top:-12px;left:12px;background:#7b1fa2;color:white;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:bold;">方法③ すでに使っているなら統合を検討</div>
+          <div style="font-size:16px; text-align:center; margin-bottom:8px;">🔐 1Password<br>（パスワードマネージャー）</div>
+          <b>こんな人：</b><br>
+          ✅ 1Passwordをすでに使っている<br>
+          ✅ 複数デバイス・PC買い替えが多い<br><br>
+          <b>効果：</b> クラウド同期で新PCでも即使える
+        </div>
+
+      </div>
+      <div class="box box-green" style="font-size:13px; text-align:center;">
+        💡 <b>①→②→③の順で段階的に使う。初心者はまず①だけでOK！</b><br>
+        ②はプログラムを作り始めたら追加。③はすでに1Passwordを使っている人が検討する。
+      </div>
+    </div>
+  </div>
+
+  <!-- 方法① 資格情報マネージャー -->
+  <div class="panel-row cols-1">
+    <div class="panel auto bg-blue">
+      <div class="p-title">🏦 方法① Windows資格情報マネージャー＋$PROFILE（全員まずここから！）</div>
+      <div style="font-size:13px; color:#555;">【どこで？】PowerShell（青い画面）　【何をする？】Windows内蔵の金庫にAPIキーを登録する</div>
+    </div>
+  </div>
+
+  <div class="panel-row cols-1">
+    <div class="panel auto">
+      <div class="p-title">▶ Step 1：資格情報マネージャーにAPIキーを登録する</div>
+      <div class="box box-gray" style="font-size:13px; margin-bottom:6px;">
+        PowerShellに貼り付けて実行（<code>ここにAPIキーを貼り付ける</code>の部分を自分のキーに書き換え）：
+        <div class="code" style="margin-top:8px;">
+          <span class="cmd">cmdkey /generic:"anthropic-api-key" /user:"claude" /pass:"ここにAPIキーを貼り付ける"</span>
+        </div>
+      </div>
+      <div class="box box-yellow" style="font-size:13px; margin-bottom:6px;">
+        「CMDKEY: 資格情報が正常に追加されました」と表示されたら成功！
+      </div>
+      <div class="box box-red" style="font-size:13px;">
+        ⚠️ <b>APIキーは PowerShell の履歴に残ります。</b>登録後に <code>Clear-History</code> を実行して履歴を消すと安心。
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-row cols-1">
+    <div class="panel auto">
+      <div class="p-title">▶ Step 2：$PROFILE に「毎回自動で読み込む」設定を書く</div>
+      <div class="box box-blue" style="font-size:13px; margin-bottom:8px;">
+        💡 <b>$PROFILE とは？</b> PowerShellを起動するたびに自動で実行される初期設定ファイル。<br>
+        ここに設定を書くと「金庫からAPIキーを取り出して準備しておいて」を毎回自動でやってくれる！
+      </div>
+      <div class="box box-gray" style="font-size:13px; margin-bottom:6px;">
+        <span class="step-badge"><span class="step-num">1</span> プロファイルを開く（存在しなければ作成）</span>
+        <div class="code" style="margin-top:8px;">
+          <span class="cmd">if (!(Test-Path $PROFILE)) { New-Item -Path $PROFILE -ItemType File -Force }</span><br>
+          <span class="cmd">notepad $PROFILE</span>
+        </div>
+        → メモ帳が開く。すでに文字があってもそのままでOK
+      </div>
+      <div class="box box-gray" style="font-size:13px; margin-bottom:6px;">
+        <span class="step-badge"><span class="step-num">2</span> 一番下に以下を追加して Ctrl+S で保存</span>
+        <div class="code" style="margin-top:8px; font-size:11px;">
+          <span class="cmt"># Claude Code APIキーをWindows資格情報マネージャーから取得</span><br>
+          <span class="cmd">$vault = New-Object Windows.Security.Credentials.PasswordVault -ErrorAction SilentlyContinue</span><br>
+          <span class="cmd">try { $env:ANTHROPIC_API_KEY = (cmdkey /list:"anthropic-api-key" | Out-Null; (Get-Credential -Message "ダミー" -UserName "dummy").GetNetworkCredential().Password) } catch {}</span>
+        </div>
+        <div class="box box-yellow" style="margin-top:6px; font-size:12px;">
+          💡 <b>より簡単な方法：</b>環境変数に直接設定する場合は、以下の1行だけでOK：<br>
+          <div class="code" style="margin-top:4px;">
+            <span class="cmd">[Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "sk-ant-api03-...", "User")</span>
+          </div>
+          ただし、Windows環境変数は平文保存のため、セキュリティ面では cmdkey + PowerShell SecretStore のほうが安全です。
+        </div>
+      </div>
+      <div class="box box-gray" style="font-size:13px; margin-bottom:6px;">
+        <span class="step-badge"><span class="step-num">3</span> PowerShellを再起動して確認</span>
+        <div class="code" style="margin-top:8px;">
+          <span class="cmd">echo $env:ANTHROPIC_API_KEY | % { $_.Substring(0, [Math]::Min(15, $_.Length)) }</span>
+        </div>
+        <span class="cmt"># APIキーの最初の15文字だけ表示して確認</span>
+      </div>
+      <div class="box box-green" style="font-size:13px;">
+        ✅ <b>成功！</b> <code>sk-ant-api03-</code> と表示されたらOK！<br>
+        ❌ 何も表示されない場合 → Step 2の設定が正しく保存されているか、PowerShellを完全に再起動したかを確認
+      </div>
+      <div class="box box-cyan" style="font-size:12px; margin-top:6px;">
+        💡 <b>推奨：SecretManagement モジュールを使う方法（上級者向け）</b><br>
+        <div class="code" style="margin-top:4px; font-size:11px;">
+          <span class="cmd">Install-Module Microsoft.PowerShell.SecretManagement, Microsoft.PowerShell.SecretStore -Scope CurrentUser</span><br>
+          <span class="cmd">Register-SecretVault -Name MyVault -ModuleName Microsoft.PowerShell.SecretStore -DefaultVault</span><br>
+          <span class="cmd">Set-Secret -Name AnthropicAPIKey -Secret "sk-ant-api03-..."</span>
+        </div>
+        <span class="cmt"># $PROFILE には以下を記述：</span><br>
+        <div class="code" style="margin-top:4px; font-size:11px;">
+          <span class="cmd">$env:ANTHROPIC_API_KEY = Get-Secret -Name AnthropicAPIKey -AsPlainText</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================ CH10: .env / .gitignore / 1Password（Windows版） ================ -->
+<div class="chapter" id="ch10">
+  <div class="chapter-header" style="background:#4e342e;">
+    <div class="chapter-num-big" style="background:#6d4c41;">10<br><span class="ch-label">Chapter</span></div>
+    <div class="chapter-header-title">
+      <h2>📂 プログラムを作るときのAPIキー管理</h2>
+    </div>
+  </div>
+
+  <div class="panel-row cols-1">
+    <div class="panel auto bg-yellow">
+      <div class="char-row">
+        <div class="char-block">
+          <div class="char-icon claude">🤖</div>
+          <div class="char-name">クロードくん</div>
+        </div>
+        <div class="bubble tail-left">
+          このChapterは<b>プログラムを自分で作り始めたとき</b>に読んでね！<br>
+          Claude CodeをPowerShellから使うだけなら<br>
+          Chapter 9（方法①）だけでOK！
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 方法② .env -->
+  <div class="panel-row cols-1">
+    <div class="panel auto bg-yellow">
+      <div class="p-title">📂 方法② .env＋.gitignore（プログラムを作るときに追加）</div>
+      <div style="font-size:13px; color:#555;">【どこで？】PowerShell＋メモ帳　【何をする？】プロジェクトフォルダにAPIキー専用の金庫ファイルを作る</div>
     </div>
   </div>
 
   <div class="panel-row cols-2">
-    <div class="panel auto bg-blue">
-      <div class="p-title" style="color:#0d47a1;">方法A：Claude有料プランでログイン（おすすめ）</div>
+    <div class="panel bg-blue auto">
+      <div class="p-title">📄 .env とは？</div>
       <div style="font-size:13px;">
-        <div class="box box-dark">
-          <div class="code">
-            <span class="ps">claude</span>
-          </div>
-        </div>
-        <div style="margin-top:8px;">
-          ① PowerShellで <code>claude</code> と入力してEnter<br>
-          ② 「<b>Log in with Claude account</b>」を矢印キーで選んでEnter<br>
-          ③ ブラウザが自動で開く → ログイン<br>
-          ④ アプリに戻ると完了！🎉
-        </div>
+        プロジェクトフォルダの中だけで使う<b>秘密メモ帳</b>。<br>
+        APIキーをここに書いておくと、プログラムが自動で読み込んでくれる。<br><br>
+        <b>中身の例：</b>
+        <div class="code" style="margin-top:6px;">ANTHROPIC_API_KEY=sk-ant-...</div>
       </div>
     </div>
-    <div class="panel auto bg-yellow">
-      <div class="p-title" style="color:#e65100;">方法B：APIキーでログイン（上級者向け）</div>
+    <div class="panel bg-green auto">
+      <div class="p-title">📋 .gitignore とは？</div>
       <div style="font-size:13px;">
-        ① <code>https://console.anthropic.com</code> でアカウント作成<br>
-        ② 「Settings」→「Limits」で<b>月額上限を設定</b>（必須！）<br>
-        ③ 「API Keys」→「Create Key」でキー<ruby>発行<rt>はっこう</rt></ruby><br>
-        ④ <b>Ch.10</b>の手順でWindows資格情報マネージャーに保管<br><br>
-        <div class="box box-red" style="font-size:12px;">
-          ⚠️ キーはすぐコピーして保管！一度しか表示されない
+        「このファイルはGitHubに送らないで！」という<b>送付禁止リスト</b>。<br>
+        <code>.env</code>と書くだけでAPIキーが<br>GitHubに漏れなくなる！<br><br>
+        <b>中身の例：</b>
+        <div class="code" style="margin-top:6px;">.env</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-row cols-1">
+    <div class="panel auto">
+      <div class="p-title">🛠️ 方法②の作り方（全部PowerShellでOK！）</div>
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:13px;">
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">1</span> フォルダを作って移動</span>
+          <div class="code" style="margin-top:8px;">
+            <span class="cmd">mkdir $HOME\Desktop\myproject</span><br>
+            <span class="cmd">cd $HOME\Desktop\myproject</span>
+          </div>
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">2</span> 2つのファイルを作る</span>
+          <div class="code" style="margin-top:8px;">
+            <span class="cmd">New-Item .env -ItemType File</span><br>
+            <span class="cmd">New-Item .gitignore -ItemType File</span>
+          </div>
+          ✅ 確認：<code>dir -Force</code> で .env と .gitignore が表示されればOK<br>
+          <span style="font-size:12px; color:#555;">💡 ドット(<code>.</code>)で始まるファイルは隠しファイル。エクスプローラーで見えない場合は「表示」→「隠しファイル」にチェック</span>
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">3</span> .env をメモ帳で開いてAPIキーを書く</span>
+          <div class="code" style="margin-top:8px;"><span class="cmd">notepad .env</span></div>
+          メモ帳が開いたら以下を書いて Ctrl+S で保存：
+          <div class="code" style="margin-top:4px;">ANTHROPIC_API_KEY=sk-ant-api03-<span class="str">（自分のAPIキーをここに貼る）</span></div>
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">4</span> .gitignore をメモ帳で開いて書く</span>
+          <div class="code" style="margin-top:8px;"><span class="cmd">notepad .gitignore</span></div>
+          これだけ書いて Ctrl+S で保存（これだけでAPIキーがGitHubに漏れなくなる）：
+          <div class="code" style="margin-top:4px;">.env</div>
+        </div>
+      </div>
+      <div class="box box-red" style="font-size:13px; margin-top:8px;">
+        ⚠️ <b>APIキーは絶対にAIのチャット欄に貼り付けないこと！</b><br>
+        ファイルの枠だけAIに作ってもらい、キーの書き込みは必ず自分でやること！
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center; padding: 16px 0 8px; font-size:18px; color:#aaa; letter-spacing:8px;">— — —</div>
+
+  <!-- 方法③ 1Password -->
+  <div class="panel-row cols-1">
+    <div class="panel auto" style="background:#f3e5f5; border-color:#7b1fa2;">
+      <div class="p-title" style="border-color:#7b1fa2;">🔐 方法③ 1Password（すでに使っているなら統合を検討）</div>
+      <div style="font-size:13px; color:#555;">【どこで？】1Passwordアプリ＋PowerShell　【何をする？】1PasswordにAPIキーを登録し、CLIで呼び出す</div>
+    </div>
+  </div>
+
+  <div class="panel-row cols-2">
+    <div class="panel auto">
+      <div class="p-title">1Passwordとは？</div>
+      <div style="font-size:13px;">
+        パスワード・クレジットカード・APIキーなど<b>あらゆる秘密情報をクラウドで管理</b>するアプリ。<br><br>
+        月額約500〜700円（有料）だが、<b>iPhone・Android・Mac・Windows</b>すべてで使えて、<b>買い替え時も自動で引き継げる</b>のが最大の強み。
+      </div>
+    </div>
+    <div class="panel auto">
+      <div class="p-title">なぜAPIキー管理に向いている？</div>
+      <div style="font-size:13px;">
+        ✅ <b>クラウド同期</b>：新しいPCでもログインするだけで<ruby>復元<rt>ふくげん</rt></ruby><br>
+        ✅ <b>CLIツール対応</b>：PowerShellから直接呼び出せる<br>
+        ✅ <b>セキュリティ最高水準</b>：ゼロ知識<ruby>暗号化<rt>あんごうか</rt></ruby><br>
+        ✅ <b>一か所で全管理</b>：パスワードもAPIキーも統合
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-row cols-1">
+    <div class="panel auto">
+      <div class="p-title">🛠️ 方法③の設定手順</div>
+      <div style="display:flex; flex-direction:column; gap:8px; font-size:13px;">
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">1</span> 1Passwordをインストール・ログイン</span><br>
+          <code>https://1password.com</code> からダウンロード → アカウント作成またはログイン
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">2</span> 1Password CLIをインストール（PowerShellで）</span>
+          <div class="code" style="margin-top:8px;">
+            <span class="cmd">winget install AgileBits.1Password.CLI</span>
+          </div>
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">3</span> 1Passwordにサインイン（PowerShellで）</span>
+          <div class="code" style="margin-top:8px;">
+            <span class="cmd">op signin</span>
+          </div>
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">4</span> 1PasswordアプリにAPIキーを登録</span><br>
+          1Passwordアプリを開く → 「+」で新規項目 → 「パスワード」を選択<br>
+          → タイトル：<code>Anthropic API Key</code>、パスワード欄に <code>sk-ant-api03-...</code> を貼り付けて保存
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">5</span> $PROFILE に読み込み設定を書く（PowerShellで）</span>
+          <div class="code" style="margin-top:8px;"><span class="cmd">notepad $PROFILE</span></div>
+          一番下に追加して Ctrl+S で保存：
+          <div class="code" style="margin-top:6px;">
+            <span class="cmd">$env:ANTHROPIC_API_KEY = (op read "op://Private/Anthropic API Key/password")</span>
+          </div>
+          <div class="box box-yellow" style="margin-top:6px; font-size:12px;">
+            ⚠️ <code>op://Private/Anthropic API Key/password</code> の部分は、<br>
+            1Passwordに登録した項目名に合わせて変更してください
+          </div>
+        </div>
+        <div class="box box-gray">
+          <span class="step-badge"><span class="step-num">6</span> 動作確認</span>
+          <div class="code" style="margin-top:8px;">
+            <span class="cmd">. $PROFILE</span><br>
+            <span class="cmt"># 今書いた設定をすぐ反映</span><br>
+            <span class="cmd">echo $env:ANTHROPIC_API_KEY | % { $_.Substring(0, 15) }</span><br>
+            <span class="cmt"># APIキーの最初の15文字だけ表示して確認</span>
+          </div>
+          ✅ <code>sk-ant-api03-</code> と表示されたらOK！
         </div>
       </div>
     </div>
   </div>
 
-  <!-- はじめて動かす -->
+  <!-- まとめ比較 -->
   <div class="panel-row cols-1">
-    <div class="panel auto bg-green">
-      <div class="p-title">🚀 STEP 5：はじめて動かしてみよう！</div>
-      <div class="box box-dark" style="margin-bottom:10px;">
-        <div class="code">
-          <span class="ps">mkdir $HOME\claude-test</span><br>
-          <span class="ps">cd $HOME\claude-test</span><br>
-          <span class="ps">claude</span>
-        </div>
-      </div>
-      <div style="font-size:13px;">
-        入力欄に試してみよう：<br>
-        <div class="box box-gray" style="margin-top:6px; font-style:italic;">「hello.txt というファイルを作って、中に「こんにちは！」と書いてください」</div>
-      </div>
-      <div class="char-row" style="margin-top:10px;">
-        <div class="char-block"><div class="char-icon claude"></div><div class="char-name">クロードくん</div></div>
-        <div class="bubble tail-left">終了したいときは <code>/exit</code> と入力するか、<b>Ctrl + C を2回</b>押してね！</div>
+    <div class="panel auto bg-gray">
+      <div class="p-title">📊 3つの方法まとめ比較</div>
+      <table class="mtable">
+        <tr>
+          <th style="width:15%;">項目</th>
+          <th>🏦 方法①<br>資格情報マネージャー＋$PROFILE</th>
+          <th>📂 方法②<br>.env＋.gitignore</th>
+          <th>🔐 方法③<br>1Password</th>
+        </tr>
+        <tr>
+          <td><b>対象</b></td>
+          <td class="ok">全員・最初に必ずやる</td>
+          <td>プログラムを作るときに追加</td>
+          <td>すでに1Passwordを使っている人</td>
+        </tr>
+        <tr>
+          <td><b>安全性</b></td>
+          <td class="ok">⭐⭐⭐ 高い<br><small>Windows内蔵の暗号化金庫</small></td>
+          <td>⭐⭐ 普通<br><small>.gitignoreが必須</small></td>
+          <td class="ok">⭐⭐⭐ 最高水準<br><small>ゼロ知識暗号化</small></td>
+        </tr>
+        <tr>
+          <td><b>手軽さ</b></td>
+          <td>⭐⭐ 少し手順がある</td>
+          <td class="ok">⭐⭐⭐ シンプル</td>
+          <td>⭐ 初期設定に手間がかかる</td>
+        </tr>
+        <tr>
+          <td><b>PC買い替え</b></td>
+          <td>⚠️ 再登録が必要</td>
+          <td>✅ ファイルをコピーするだけ</td>
+          <td class="ok">✅✅ 最も楽<br><small>ログインするだけで自動復元</small></td>
+        </tr>
+        <tr>
+          <td><b>費用</b></td>
+          <td class="ok">無料</td>
+          <td class="ok">無料</td>
+          <td>月額約500〜700円</td>
+        </tr>
+        <tr>
+          <td><b>おすすめ度</b></td>
+          <td class="ok">⭐⭐⭐ まず全員やる</td>
+          <td>⭐⭐ 必要になったら追加</td>
+          <td>⭐⭐ 使っているなら統合</td>
+        </tr>
+      </table>
+      <div class="box box-blue" style="font-size:12px; margin-top:10px;">
+        💡 <b>結論：初心者は方法①から始める。プログラムを作り始めたら②を追加。すでに1Passwordを使っているなら③に統合すると管理がシンプルになる。</b>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ===== CH10 ===== -->
-<div class="chapter" id="ch10">
-  <div class="chapter-header" style="background:#283593;">
-    <div class="chapter-num-big" style="background:#3949ab;">10<br><span class="ch-label">Chapter</span></span></div>
+<!-- ================ CH11: セキュリティチェックリスト（Windows版） ================ -->
+<div class="chapter" id="ch11">
+  <div class="chapter-header" style="background:#1a237e;">
+    <div class="chapter-num-big" style="background:#283593;">11<br><span class="ch-label">Chapter</span></div>
     <div class="chapter-header-title">
-      <h2>🔑 APIキー管理 ＆ セキュリティ最終チェック</h2>
+      <h2>✅ セキュリティ最終チェック</h2>
     </div>
   </div>
 
   <div class="panel-row cols-1">
     <div class="panel auto bg-red">
       <div class="char-row">
-        <div class="char-block"><div class="char-icon kiken"></div><div class="char-name">きけん博士</div></div>
-        <div class="bubble tail-left">さぁ、最後の関門じゃよ！よく聞くのじゃ！🔬<br>このチェックリストを全部クリアするまでは<b>安全とは言えんのじゃよ！</b><br>特に<b>GitHubへのアップロード</b>は取り返しのつかない大惨事につながるのじゃ。<br>焦らず、ひとつひとつ丁寧に確認するのじゃぞ！</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Windows資格情報マネージャー -->
-  <div class="panel-row cols-1">
-    <div class="panel auto">
-      <div class="p-title">🔐 Windows資格情報マネージャーでAPIキーを安全に保管</div>
-      <div class="char-row" style="margin-bottom:10px;">
-        <div class="char-block"><div class="char-icon idea"></div><div class="char-name">ひかりちゃん</div></div>
-        <div class="bubble tail-left">Macはキーチェーンという仕組みを使うけど、<br>Windowsには<b>資格情報マネージャー</b>という安全な保管場所があるよ。<br>一度設定すればずっと安全に使えるから、ぜひやってみてね。</div>
-      </div>
-
-      <div style="display:flex; flex-direction:column; gap:10px; font-size:13px;">
-        <div class="box box-blue">
-          <div class="step-badge"><span class="step-num">1</span> PowerShellでAPIキーを保管</div><br>
-          <div class="code" style="margin-top:6px;">
-            <span class="cmt"># 「ここにAPIキーを貼り付ける」を自分のキーに書き換えること！</span><br>
-            <span class="ps">cmdkey /generic:"anthropic-api-key" /user:"claude" /pass:"ここにAPIキーを貼り付ける"</span>
-          </div>
+        <div class="char-block">
+          <div class="char-icon kiken">🔬</div>
+          <div class="char-name">きけん博士</div>
         </div>
-        <div class="box box-green">
-          <div class="step-badge"><span class="step-num">2</span> PowerShellプロファイルに設定を書く</div><br>
-          プロファイルを開く（メモ帳が開く）：<br>
-          <div class="code" style="margin-top:4px;">
-            <span class="ps">notepad $PROFILE</span>
-          </div>
-          <div style="margin-top:6px; color:#c62828; font-weight:bold;">「ファイルが見つかりません」と出たら先に作成：</div>
-          <div class="code" style="margin-top:4px;">
-            <span class="ps">New-Item -Path $PROFILE -ItemType File -Force</span>
-          </div>
-          <div style="margin-top:8px;">メモ帳が開いたら<b>一番下に追加</b>して <b>Ctrl+S で保存</b>：</div>
-          <div class="code" style="margin-top:4px; font-size:11px;">
-            <span class="cmt"># Claude Code APIキーをWindows資格情報マネージャーから取得</span><br>
-            <span class="ps">$cred = Get-StoredCredential -Target "anthropic-api-key" 2&gt;$null</span><br>
-            <span class="ps">if ($cred) {</span><br>
-            <span class="ps">&nbsp;&nbsp;$env:ANTHROPIC_API_KEY = [System.Net.NetworkCredential]::new("", $cred.Password).Password</span><br>
-            <span class="ps">}</span>
-          </div>
-        </div>
-        <div class="box box-yellow">
-          <div class="step-badge"><span class="step-num">3</span> PowerShellを再起動して確認</div><br>
-          PowerShellを閉じて新しく開き直し、以下を入力：<br>
-          <div class="code" style="margin-top:6px;">
-            <span class="ps">echo $env:ANTHROPIC_API_KEY | % { $_.Substring(0, [Math]::Min(15, $_.Length)) }</span>
-          </div>
-          <code>sk-ant-api03-</code> が出てきたらOK！🎉
+        <div class="bubble tail-left">
+          さぁ、最後の関門じゃよ！よく聞くのじゃ！🔬<br>
+          このチェックリストを全部クリアするまでは<b>安全とは言えんのじゃよ！</b><br>
+          特に<b>GitHubへのアップロード</b>は取り返しのつかない大惨事につながるのじゃ。<br>
+          焦らず、ひとつひとつ丁寧に確認するのじゃぞ！
         </div>
       </div>
     </div>
   </div>
 
-  <!-- .env と .gitignore -->
-  <div class="panel-row cols-1">
-    <div class="panel auto">
-      <div class="p-title">📂 .env と .gitignore でプロジェクトを守ろう</div>
-      <div class="char-row" style="margin-bottom:10px;">
-        <div class="char-block"><div class="char-icon claude"></div><div class="char-name">クロードくん</div></div>
-        <div class="bubble tail-left">プログラムを作るとき、APIキーをコードに直書きすると<br>GitHubに公開した瞬間<b>世界中に丸見え</b>になっちゃう！<br>この仕組みで守ろう！</div>
-      </div>
-
-      <div style="display:flex; flex-direction:column; gap:8px; font-size:13px;">
-        <div class="box box-blue">
-          <div class="step-badge"><span class="step-num">1</span> 作業フォルダを作る</div><br>
-          <div class="code" style="margin-top:4px;">
-            <span class="ps">mkdir $HOME\Desktop\myproject</span><br>
-            <span class="ps">cd $HOME\Desktop\myproject</span>
-          </div>
-        </div>
-        <div class="box box-blue">
-          <div class="step-badge"><span class="step-num">2</span> 2つのファイルを作る</div><br>
-          <div class="code" style="margin-top:4px;">
-            <span class="ps">New-Item .env -ItemType File</span><br>
-            <span class="ps">New-Item .gitignore -ItemType File</span>
-          </div>
-          <div style="margin-top:6px; color:#555; font-size:12px;">
-            💡 ドット(<code>.</code>)で始まるファイルは隠しファイル。<br>
-            エクスプローラーで見えない場合：「表示」→「隠しファイル」にチェック<br>
-            PowerShellで確認：<code>dir -Force</code>
-          </div>
-        </div>
-        <div class="box box-yellow">
-          <div class="step-badge"><span class="step-num">3</span> .envにAPIキーを書く</div><br>
-          <div class="code" style="margin-top:4px;"><span class="ps">notepad .env</span></div>
-          メモ帳が開いたら入力して <b>Ctrl+S</b> で保存：<br>
-          <div class="code" style="margin-top:4px;"><span class="str">ANTHROPIC_API_KEY=sk-ant-api03-ここに本物のキーを貼る</span></div>
-          <div style="color:#c62828; margin-top:4px; font-size:12px;">⚠️ 「xxxx」のままでは動きません！必ず本物のキーに書き換えること！</div>
-        </div>
-        <div class="box box-green">
-          <div class="step-badge"><span class="step-num">4</span> .gitignoreに1行書く</div><br>
-          <div class="code" style="margin-top:4px;"><span class="ps">notepad .gitignore</span></div>
-          メモ帳に <b>これだけ</b> 入力して <b>Ctrl+S</b> で保存：<br>
-          <div class="code" style="margin-top:4px;"><span class="str">.env</span></div>
-          <div style="color:#2e7d32; margin-top:4px; font-size:12px;">✅ たった4文字でAPIキーがGitHubに漏れなくなる！</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- チェックリスト -->
   <div class="panel-row cols-1">
     <div class="panel auto">
       <div class="p-title">🛡️ Windows版 セキュリティ最終チェックリスト</div>
@@ -1624,8 +2313,9 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
             <li class="ok">Windowsを最新の状態にアップデートした</li>
             <li class="ok">Windows Defenderが有効になっている</li>
             <li class="ok">APIキーをWindows資格情報マネージャーに保管した</li>
-            <li class="ok">PowerShellプロファイルに読み込み設定を書いた</li>
-            <li class="ok">.envに直接キーを書いていない（コピー書き）</li>
+            <li class="ok">$PROFILEに読み込み設定を書いた</li>
+            <li class="ok">echo コマンドで sk-ant-api03- を確認した</li>
+            <li class="ok">.envに直接キーを書いていない</li>
             <li class="ok">.gitignoreに .env と書いた</li>
             <li class="ok">APIキーをチャットに貼っていない</li>
             <li class="ok">Anthropic Consoleで月額上限を設定した</li>
@@ -1647,49 +2337,13 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
     </div>
   </div>
 
-  <!-- Q&A -->
-  <div class="panel-row cols-1">
-    <div class="panel auto bg-dark">
-      <div class="p-title" style="color:white; border-color:#444;">❓ 困ったときのQ&A（Windows版）</div>
-      <div style="display:flex; flex-direction:column; gap:10px; font-size:13px; color:#eee;">
-        <div>
-          <b style="color:#9cdcfe;">Q. 「claude：用語 'claude' は…認識されません」と出ます</b><br>
-          A. PowerShellを閉じて開き直してみて！それでもダメならSTEP 3からやり直し。
-        </div>
-        <div>
-          <b style="color:#9cdcfe;">Q. 「スクリプトの実行が無効になっています」と出ます</b><br>
-          A. <div class="code" style="margin-top:4px; font-size:11px;"><span class="ps">Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</span></div>
-          「Y」を押してEnter → 再試行。
-        </div>
-        <div>
-          <b style="color:#9cdcfe;">Q. 「npm が認識されません」と出ます</b><br>
-          A. Node.jsインストール後にPowerShellを再起動してないかも！<br>一度完全に閉じて開き直してね。
-        </div>
-        <div>
-          <b style="color:#9cdcfe;">Q. APIキーが認識されません</b><br>
-          A. PowerShellを再起動して <div class="code" style="margin-top:4px; font-size:11px;"><span class="ps">echo $env:ANTHROPIC_API_KEY | % { $_.Substring(0,15) }</span></div>
-          で確認してみて。
-        </div>
-        <div>
-          <b style="color:#9cdcfe;">Q. APIキーが漏れてしまったかも…</b><br>
-          A. すぐに <code style="color:#ce9178;">https://console.anthropic.com</code> を手打ちで開いて「API Keys」から該当キーを削除してください。
-        </div>
-        <div>
-          <b style="color:#9cdcfe;">Q. アンインストールしたいです</b><br>
-          <div class="code" style="margin-top:4px; font-size:11px;">
-            <span class="ps">npm uninstall -g @anthropic-ai/claude-code</span><br>
-            <span class="ps">cmdkey /delete:"anthropic-api-key"</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- おわりに -->
   <div class="panel-row cols-1">
     <div class="panel auto bg-green">
       <div class="char-row">
-        <div class="char-block"><div class="char-icon claude"></div><div class="char-name">クロードくん</div></div>
+        <div class="char-block">
+          <div class="char-icon claude">🤖</div>
+          <div class="char-name">クロードくん</div>
+        </div>
         <div class="bubble tail-left">
           全部チェックできた？<br>
           おめでとう！<b>Claude Code（Windows版）</b>が使えるようになったよ！🎉<br><br>
@@ -1701,8 +2355,45 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
           ありがとう！Windowsでもできた！<br>これで自分もAI使いになれる気がしてきた！
         </div>
         <div class="char-block">
-          <div class="char-icon user"></div>
+          <div class="char-icon user">👨</div>
           <div class="char-name">あなた</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-row cols-1">
+    <div class="panel auto bg-dark">
+      <div class="center" style="font-size:16px; color:white; margin-bottom:12px; font-weight:bold;">よくある質問 Q&amp;A（Windows版）</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-size:13px; color:#eee;">
+        <div>
+          <b style="color:#9cdcfe;">Q. 「claude：用語 'claude' は…認識されません」と出ます</b><br>
+          A. PowerShellを閉じて開き直してみて！それでもダメならCh.8のインストール手順からやり直し。
+        </div>
+        <div>
+          <b style="color:#9cdcfe;">Q. 「スクリプトの実行が無効になっています」と出ます</b><br>
+          A. <div class="code" style="margin-top:4px; font-size:11px;"><span class="cmd">Set-ExecutionPolicy -Scope CurrentUser RemoteSigned</span></div>
+          「Y」を押してEnter → 再試行。
+        </div>
+        <div>
+          <b style="color:#9cdcfe;">Q. 「npm が認識されません」と出ます</b><br>
+          A. Node.jsインストール後にPowerShellを再起動してないかも！<br>一度完全に閉じて開き直してね。
+        </div>
+        <div>
+          <b style="color:#9cdcfe;">Q. APIキーが認識されません</b><br>
+          A. PowerShellを再起動して <div class="code" style="margin-top:4px; font-size:11px;"><span class="cmd">echo $env:ANTHROPIC_API_KEY | % { $_.Substring(0,15) }</span></div>
+          で確認してみて。
+        </div>
+        <div>
+          <b style="color:#9cdcfe;">Q. APIキーが漏れてしまったかも…</b><br>
+          A. すぐに <code style="color:#ce9178;">https://console.anthropic.com</code> を手打ちで開いて「API Keys」から該当キーを削除してください。
+        </div>
+        <div>
+          <b style="color:#9cdcfe;">Q. アンインストールしたいです</b><br>
+          <div class="code" style="margin-top:4px; font-size:11px;">
+            <span class="cmd">npm uninstall -g @anthropic-ai/claude-code</span><br>
+            <span class="cmd">cmdkey /delete:"anthropic-api-key"</span>
+          </div>
         </div>
       </div>
     </div>
@@ -1724,6 +2415,7 @@ ruby rt { font-size: 0.55em; color: #888; font-weight: normal; }
   </div>
 
 </div>
+
 
 <script>
 document.querySelectorAll('.mtable').forEach(function(t) {
